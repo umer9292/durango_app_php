@@ -78,7 +78,7 @@
 
 /*  Login card style    */
 .loginBg {
-    background-image: url("../img/login2.jpg");
+    background-image: url("../img/login3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -95,12 +95,76 @@
 
 .login_title_name {
     font-family: Roboto;
+    font-size: 40px;
+    color: #ff443a;
+    text-align: center;
+}
+
+.login_form_control {
+    font-size: 18px;
+    color: #ffffff !important;
+    background-color: transparent  !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 3px solid #c58f89  !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.login_form_control:focus {
+    box-shadow: none !important;
+}
+
+.login_form_control::placeholder {
+    color: #ffffff !important;
+}
+
+a {
+    color: #ff443a !important;
+    font-size: 20px !important;
+}
+
+a:hover {
+    color: #aa1c12 !important;
+}
+
+.login_btn {
+    margin-top: 30px !important;
+    color: #f9f5f7 !important;
+    background-color: #92866b !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.login_btn:hover {
+    background-color: #92754d !important;
+}
+
+
+/*  update password card style    */
+.updatePaswrdBg {
+    background-image: url("../img/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.updatePaswrdCard {
+    background-color: lightcyan !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin-top: 170px !important;
+}
+
+.updatePaswrd_title_name {
+    font-family: Roboto;
     font-size: 33px;
     color: #22aa23;
     text-align: center;
 }
 
-.login_form_control {
+.updatePaswrd_form_control {
     font-size: 1rem;
     color: #c16f0f !important;
     background-color: transparent !important;
@@ -110,33 +174,27 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.login_form_control:focus {
+.updatePaswrd_form_control:focus {
     box-shadow: none !important;
 }
 
-.login_form_control::placeholder {
+.pdatePaswrd_form_control::placeholder {
     color: #a98d68 !important;
 }
 
-a {
-    color: #926c19 !important;
+
+.update_btn {
+    margin-top: 40px;
+    border-radius: 25px !important;
 }
+/*.updatePaswrd_btn {*/
+    /*margin-top: 40px;*/
+    /*color: #080a07 !important;*/
+    /*background-color: #abb3ab  !important;*/
+    /*border: 1px solid brown;*/
+    /*border-radius: 0 !important;*/
+/*}*/
 
-a:hover {
-    color: #aa6932 !important;
-}
-
-.login_btn {
-    margin-top: 15px;
-    color: #202021 !important;
-    background-color: #51db51 !important;
-    border: none !important;
-    border-radius: 0 !important;
-}
-
-.login_btn:hover {
-    background-color: #22aa23 !important;
-}
-
-
-
+/*.updatePaswrd_btn:hover {*/
+    /*background-color: #929da0  !important;*/
+/*}*/

@@ -10,7 +10,8 @@
         $email = $_POST['email'];
         $password = $_POST['passwrd'];
 
-        $sql = 'SELECT * FROM users WHERE email= "'.$email.'" AND passwrd= "'.$password.'"';
+        $hashed = hash('sha512', $password);
+        $sql = 'SELECT * FROM users WHERE email= "'.$email.'" AND passwrd= "'.$hashed.'"';
         $query = mysqli_query($con, $sql) or die(mysqli_error($con));
         if (mysqli_num_rows($query) == 1) {
             $user = mysqli_fetch_array($query, true);
@@ -21,7 +22,8 @@
                 'userName' => $user['userName'],
                 'email' => $user['email']
             ];
-            header('location : dashboard.php');
+            header('location: dashboard.php');
+            exit();
         } else {
             die('wrong email & password');
         }

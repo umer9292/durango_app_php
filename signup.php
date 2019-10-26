@@ -40,8 +40,9 @@ if (isset($_POST['submit'])) {
     }
 
     if (count($errors) == 0) {
+        $hashed = hash('sha512', $password);
         $userInsertQuery = 'INSERT INTO users (first_name, last_name, userName, age, gender, email, passwrd)
-        VALUE("'.$firstName.'","'.$lastName.'","'.$userName.'","'.$age.'","'.$gender.'","'.$email.'","'.$password.'")';
+        VALUE("'.$firstName.'","'.$lastName.'","'.$userName.'","'.$age.'","'.$gender.'","'.$email.'","'.$hashed.'")';
         $result = mysqli_query($con, $userInsertQuery);
         if ($result) {
             header('location: login.php');
