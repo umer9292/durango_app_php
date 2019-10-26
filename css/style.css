@@ -1,0 +1,142 @@
+.navbar {
+    background-color: rgba(0,0,0,0.4) !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #c35555 !important;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #aa3a42 !important;
+}
+
+
+/*  Signup card style    */
+.signupBg {
+    background-image: url("../img/signup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.signupCard {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin-top: 100px !important;
+}
+
+.signup_title_name {
+    font-family: Roboto;
+    font-size: 33px;
+    color: #bd8574;
+    text-align: center;
+}
+
+.signup_form_control {
+    font-size: 1rem;
+    color: #c15151 !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #a98377 !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.signup_form_control:focus {
+    box-shadow: none !important;
+}
+
+.signup_form_control::placeholder {
+    color: #a98377 !important;
+}
+
+.signup_link {
+    color: #7b8a92 !important;
+}
+
+.signup_link:hover {
+    color: #4d6469 !important;
+}
+
+.submit_btn {
+    margin-top: 15px;
+    color:#fff;
+    background-color: #7c6262 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.submit_btn:hover {
+    background-color: #654545 !important;
+}
+
+
+/*  Login card style    */
+.loginBg {
+    background-image: url("../img/login2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.loginCard {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin-top: 170px !important;
+}
+
+.login_title_name {
+    font-family: Roboto;
+    font-size: 33px;
+    color: #22aa23;
+    text-align: center;
+}
+
+.login_form_control {
+    font-size: 1rem;
+    color: #c16f0f !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 3px solid #a97c4f !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.login_form_control:focus {
+    box-shadow: none !important;
+}
+
+.login_form_control::placeholder {
+    color: #a98d68 !important;
+}
+
+a {
+    color: #926c19 !important;
+}
+
+a:hover {
+    color: #aa6932 !important;
+}
+
+.login_btn {
+    margin-top: 15px;
+    color: #202021 !important;
+    background-color: #51db51 !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.login_btn:hover {
+    background-color: #22aa23 !important;
+}
+
+
+
